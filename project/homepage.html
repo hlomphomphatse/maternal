@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+          
+            position: relative;
+        }
+
+        .hero-section {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            color: #FF69B4;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .centered-carousel {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        .carousel-card {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            width: 300px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .carousel-card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .carousel-card .info {
+            padding: 20px;
+        }
+
+        .carousel-card .info h3 {
+            margin-top: 0;
+            color: black;
+            font-size: 18px;
+        }
+
+        .header {
+            background-color:gray;
+            color:white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header nav {
+            text-align: center;
+        }
+
+        .header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header nav li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .header nav li:first-child {
+            margin-left: 0;
+        }
+
+        .header nav a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: #FF69B4;
+            color: #FFF;
+            text-align: center;
+            padding: 10px ;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            margin: 10px;
+            text-decoration: none;
+            color: #FFF;
+            font-size: 16px;
+        }
+
+        .footer a:hover {
+            color: #FF1493;
+        }
+    </style>
+    <title>Maternal Health Consultations in Lesotho</title>
+</head>
+<body>
+   
+
+    <div class="hero-section">
+        <h1>Welcome to Sunnie Babies Maternal Health Consultations Lesotho</h1>
+        <p>We Provide Essential Information on Postnatal Care, Prenatal Care, Nutritional Value, And Emergency Services in Lesotho</p>
+    </div>
+
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="postnatal.html">Postnatal Care</a></li>
+                <li><a href="prenatal.html">Prenatal Care</a></li>
+                <li><a href="nutrition.html">Nutritional Value</a></li>
+                <li><a href="emergency.html">Emergency Services</a></li>
+                <li><a href="ABOUTUS.html">About Us</a></li>
+                <li><a href="logout-user.php">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="centered-carousel">
+        <div class="carousel">
+            <div class="carousel-card">
+                <a href="postnatal.html">
+                    <img src="natal.jpg" alt="Postnatal Care">
+                </a>
+                <div class="info">
+                    <h3>Postnatal Care</h3>
+                    <p>This section is dedicated to providing essential information during the postpartum period, which lasts up to 6 weeks after childbirth.</p>
+                </div>
+            </div>
+            <div class="carousel-card">
+                <a href="prenatal.html">
+                    <img src="care.jpg" alt="Prenatal Care">
+                </a>
+                <div class="info">
+                    <h3>Prenatal Care</h3>
+                    <p>This section covers significant information for a healthy and informed pregnancy. Prepare yourself for a successful pregnancy experience with effective guidance on this important stage of your life.</p>
+                </div>
+            </div>
+            <div class="carousel-card">
+                <a href="nutrition.html">
+                    <img src="values.jpg" alt="Nutritional Value">
+                </a>
+                <div class="info">
+                    <h3>Nutritional Value</h3>
+                    <p>Explore a wealth of information about maintaining a well-balanced and nutritious diet that supports both you and your baby's health. Empower yourself with knowledge about optimal nutrition and make informed choices for a thriving and nourished pregnancy journey.</p>
+                </div>
+            </div>
+            <div class="carousel-card">
+                <a href="emergency.html">
+                    <img src="emergency.jpg" alt="Emergency Services">
+                </a>
+                <div class="info">
+                    <h3>Emergency Services</h3>
+                    <p>Providing you with vital information and resources for immediate assistance during critical situations. Get details on how to handle emergencies, contact healthcare professionals, seek urgent help for maternal healthcare consultations, and be ready and informed in crucial moments by visiting this section.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-section">
+    </div>
+
+    <div class="footer">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#ABOUTUS">About</a>
+        <div>
+            <a href="https://facebook.com"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://whatsapp.com"><img src="whatsapp.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2023 Maternal Healthcare Consultations in Lesotho. All rights reserved.</p>
+    </div>
+</body>
+</html>
